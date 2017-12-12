@@ -12,7 +12,7 @@
 	<body>
 		<header class="container-fluid">			
 			<div class="row">
-				<div class="register col-xs-4 col-sm-4 col-md-4 col-lg-4"><span><img src="bananas.png"> Welcome to BananaGEST!</span></div>
+				<div class="register col-xs-4 col-sm-4 col-md-4 col-lg-4"><span><img src="images/bananas.png"> Welcome to BananaGEST!</span></div>
 				<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"><h1>Banana GEST</h1></div>
 				<div class="register col-xs-4 col-sm-4 col-md-4 col-lg-4"><h4><a href="#">Registrarse</a></h4></div>
 			</div>		
@@ -20,15 +20,15 @@
 		<main class="container-fluid">
 			<div class="row">
 				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-					<img id= "bananas" src="bananas_grande.png"/>
+					<img id= "bananas" src="images/bananas_grande.png"/>
 					<form action="home_usuario.html" method="get" id="formulario">
 						<p id="error"></p>
 						<div class="intro_user">
-							<img class="alinear" src="user.png"/>
+							<img class="alinear" src="images/user.png"/>
 							<input type="text" placeholder="User" maxlength="8" required="true" autofocus/>
 						</div>
 						<div class="intro_user">
-							<img class="alinear" src="lock.png"/>
+							<img class="alinear" src="images/lock.png"/>
 							<input type="password" placeholder="Password" maxlength="12" minlength="6" required="true"/>
 						</div>
 						<div class="intro_user">
@@ -40,18 +40,18 @@
 					</form>										
 					<div class="intro_user">
 						<a href="https://twitter.com/?lang=es">
-						<img src="twitter.png"/>
+						<img src="images/twitter.png"/>
 						</a>
 						<a href="https://es-es.facebook.com/">
-						<img src="facebook.png"/>
+						<img src="images/facebook.png"/>
 						</a>
 						<a href="https://es.linkedin.com/">
-						<img src="linkedin.png"/>	
+						<img src="images/linkedin.png"/>	
 						</a>
 						<a href="https://www.instagram.com/?hl=es">
-						<img src="instagram.png"/>
+						<img src="images/instagram.png"/>
 						</a>
-						<img src="share.png"/>
+						<img src="images/share.png"/>
 					</div>
 				</div>
 			</div>
