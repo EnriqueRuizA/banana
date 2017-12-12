@@ -9,9 +9,9 @@
 	</head>
 	<body>
 		<header>
-			<div class="head"><img src="profile.png" width="55" height="55"><h3>Bienvenido/a (User)</h3>
+			<div class="head"><img src="images/profile.png" width="55" height="55"><h3>Bienvenido/a (User)</h3>
             <a href="#">Editar perfil</a></div>
-            <div class="head"><h1>Banana GEST</h1><a href="home_usuario.html"><img src="bananas_medio.png"/></a></div>
+            <div class="head"><h1>Banana GEST</h1><a href="home_usuario.html"><img src="images/bananas_medio.png"/></a></div>
             <div class="head"><h4><a href="login.html">Logout</a></h4></div>    
 		</header>
 		<main>
@@ -21,7 +21,7 @@
 						<input type="submit" name="boton" value="Crear proyecto" style="width:60%">
 					</a>
 					<a href="#">
-						<img src="add.png" style="width:3%"/>
+						<img src="images/add.png" style="width:3%"/>
 					</a>
 				</p>
 				<p>
@@ -29,7 +29,7 @@
 						<input type="submit" name="boton" value="Crear tarea" style="width:60%">
 					</a>
 					<a href="creartarea.html">
-						<img src="add.png" style="width:3%"/>
+						<img src="images/add.png" style="width:3%"/>
 					</a>
 				</p>	
 				<p>
@@ -41,7 +41,7 @@
 			<sidebar class="tareas">
 				<nav>
 					<h2>Tus tareas</h2>
-					<img src="search.png"/>
+					<img src="images/search.png"/>
 					<input type="text" name="navegador" placeholder="Search"/>
 					<p>
 						<table id="tabla" border="3" cellspacing="0" cellpadding="2" bordercolor="#666633"/>
