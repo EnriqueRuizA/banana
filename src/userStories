@@ -1,0 +1,39 @@
+GRUPO 1
+
+INTEGRANTES
+
+Daniel Lozano
+Enrique Ruiz
+Mario Valera
+Claudia Mas
+Borja Herranz
+
+HISTORIAS DE USUARIO Y CRITERIOS DE ACEPTACIÓN
+
+1 - Como usuario quiero poder introducir usuario y contraseña para poder acceder a mi "Home_Usuario". 
+
+	Dado un usuario que se identifica correctamente,
+	cuando intenta acceder al "Home_Usuario",
+	entonces se le manda un mensaje de confirmación y se le redirige automáticamente a la "Home_Usuario".
+
+	Dado un usuario que se identifica de manera incorrecta,
+	cuando intenta acceder al "Home_Usuario",
+	entonces se le manda un mensaje de error y se le redirige automáticamente a "login".
+
+2 - Como usuario quiero crear tareas para poder añadirlas a mi Lista de Tareas.
+
+	Dado un usuario identificado en BananaGest,
+	cuando el usuario rellena todos los campos del formulario de creación de tarea y le da al botón de "crear",
+	entonces se le manda un mensaje de notificación relativo a la tarea y se le redirige a "Home_Usuario".
+
+	Dado un usuario identificado en BananaGest,
+	cuando el usuario no rellena todos los campos obligatorios del formulario,
+	entonces se le manda una notificación, y se le redirecciona a "Crear Tarea".
+
+3 - Como usuario quiero visualizar las tareas en la "Home_Usuario" que me han sido asignadas para visualizarlas de manera más rápida.
+	
+	Dado un usuario identificado,
+	cuando el usuario se encuentra en "Home_Usuario",
+	entonces puede crear tareas, visualizarlas y modificarlas.
+	
+
