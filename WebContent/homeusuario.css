@@ -1,0 +1,65 @@
+@charset "ISO-8859-1";
+
+html{
+	background: #F9E79f;
+	margin:10px;
+}
+
+header{
+	background: #F4D03F;
+	border-radius: 10px;
+}
+
+section{
+	width: 150%;
+}
+
+.head{
+	display: inline-table;
+	width: 33%;
+	text-align: center;
+}
+
+.botones {
+	border-style: solid;
+	display: inline-block;	/**/
+	width: 74%;
+	margin-top: 20px;
+	margin-bottom:10px;
+	margin-left: 30px;
+	margin-right: 10px;	
+	text-align: center;
+	top: 0;			/**/
+}
+
+.tareas {
+	float: right;	/**/
+	width: 20%;	
+	border-style: solid;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom:10px;
+	margin-left: 10px;
+	margin-left: 10px;
+	text-align: top;			/**/
+}
+
+a{
+	color: black;
+	text-decoration: none;
+}
+#tabla{
+	display: inline-block;
+	margin-right: 20%;
+	text-align: center;
+}
+
+footer{
+    background: #A04000;
+    color:white;
+    text-align: center;
+       left:0px;
+       bottom:0px;
+       height:30px;
+       width:100%;
+}
