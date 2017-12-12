@@ -14,7 +14,6 @@ public class TaskBean {
 	TaskBean(){
 		
 	}
-
 	
 	public String getNameTask() {
 		return nameTask;
@@ -78,8 +77,5 @@ public class TaskBean {
 
 	public void setUrlFile(String urlFile) {
 		this.urlFile = urlFile;
-	}
-
-	
-	
+	}	
 }

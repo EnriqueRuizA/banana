@@ -18,11 +18,9 @@ public class UserBean {
 		this.imageUrl = imageUrl;
 	};
 	
-	
 	UserBean(){
 		
-	}
-	
+	}	
 	
 	public String getName() {
 		return name;
@@ -60,9 +58,4 @@ public class UserBean {
 	public void setImageUrl(String imageUrl) {
 		this.imageUrl = imageUrl;
 	}
-	
-	
-	
-	
-	
 }
