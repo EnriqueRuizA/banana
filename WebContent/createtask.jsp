@@ -6,7 +6,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Crear tarea | Banana GEST</title>
-		<link rel="stylesheet" type="text/css" href="creartarea.css">
+		<link rel="stylesheet" type="text/css" href="createtask.css">
 	</head>
 	<body>
 		<header>
@@ -18,7 +18,7 @@
 		<h2>Registro de nueva tarea</h2>
 		<hr>
 		<main>
-			<form method="post" action="creartarea">
+			<form method="post" action="/createtask">
 				<p>
 					<table id="basic">
 						<tr class="contenttable">

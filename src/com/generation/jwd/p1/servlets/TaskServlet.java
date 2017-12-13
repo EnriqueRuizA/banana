@@ -14,7 +14,7 @@ import com.generation.jwd.p1.beans.*;
 /**
  * Servlet implementation class TaskServlet
  */
-@WebServlet("/creartarea")
+@WebServlet("/createtask")
 public class TaskServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
@@ -47,7 +47,7 @@ public class TaskServlet extends HttpServlet {
 		HttpSession session_name= (HttpSession)request.getSession();
 		
 		session_name.setAttribute("saveTask",task);
-		request.getRequestDispatcher("homeusuario.jsp")
+		request.getRequestDispatcher("homeuser.jsp")
 		.forward(request, response);
 	}
 

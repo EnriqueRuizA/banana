@@ -5,9 +5,9 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Document</title>
-		<link rel="stylesheet" type="text/css" href="homeusuario.css">
+		<link rel="stylesheet" type="text/css" href="homeuser.css">
 	</head>
-	<body method="get" action= "/homeusuario">
+	<body method="get" action= "/homeuser">
 		<header>
 			<div class="head"><img src="images/profile.png" width="55" height="55"><h3>Bienvenido/a (User)</h3>
             <a href="#">Editar perfil</a></div>
