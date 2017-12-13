@@ -1,4 +1,4 @@
-package bananawebproyect;
+package com.generation.jwd.beans;
 
 public class LoginBean {
 
