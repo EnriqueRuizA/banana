@@ -131,12 +131,22 @@
 				</p>
 				</form>
 					<div id="boton">
-						<a href="respuestaformulario.html">
-							<input type="submit" name="create_account" value="Crear tarea" style="width:200px; height: 50px" />
+						<a href="homeuser.jsp">
+							<button onclick ="myFunction()" type=submit name="create_task" value="Crear tarea" style="width:200px; height:50px;">Crear Tarea</button>
+								<script type="text/javascript">
+									function myFunction() {
+									alert("You have created a new task");
+								}
+								</script>
 						</a>
-						<a href="home_usuario.html">
-							<input class="boton" type="submit" name="cancel_task" value="Cancelar tarea" style="width:200px; height: 50px" />
-						</a>
+						<a href="homeuser.jsp">
+							<button onclick = "cancelar()" type=submit name="cancel_task" value="Cancelar tarea" style="width:200px; height:50px;">Cancelar Tarea</button>
+								<script type="text/javascript">
+									function cancelar(){
+										alert("You have cancelled create a new task")
+									}
+								</script>
+						</a>						
 					</div>
 				</form>
 			</div>
