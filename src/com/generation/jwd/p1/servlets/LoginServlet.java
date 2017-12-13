@@ -1,4 +1,4 @@
-package com.generation.jwd.servlets;
+package com.generation.jwd.p1.servlets;
 
 import java.io.IOException;
 import javax.servlet.ServletException;

@@ -1,4 +1,4 @@
-package com.generation.jwd.beans;
+package com.generation.jwd.p1.beans;
 
 public class TaskBean {
 	
