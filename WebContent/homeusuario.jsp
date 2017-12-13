@@ -74,11 +74,6 @@
 					</p>
 				</nav>	
 			</sidebar>
-			<aside class="botones">
-				<a href="https://calendar.google.com/calendar?cid=bGRpaWxlaWIyaDBidm82dWJnYTk3ZmJwNTBAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ">
-					<iframe src="https://teamup.com/ks09175eafc7c69bf8" frameborder="0" width="100%" height="480"></iframe>
-				</a>
-			</aside>
 		</main>
 		<br/>
 		<footer>
