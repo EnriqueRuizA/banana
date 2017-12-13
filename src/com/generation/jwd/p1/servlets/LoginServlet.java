@@ -6,6 +6,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import com.generation.jwd.p1.beans.LoginBean;
 
@@ -34,7 +35,14 @@ public class LoginServlet extends HttpServlet {
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		LoginBean loginBean = new LoginBean();
-		loginBean.setId(request.getParameter(arg0));
+		loginBean.setId(request.getParameter("user"));
+		loginBean.setPassword(request.getParameter("password"));
+		
+		request.setAttribute("loginBean", loginBean);
+		
+		HttpSession session = request.getSession();
+		
+		if()
 		doGet(request, response);
 	}
 
