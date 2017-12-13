@@ -10,40 +10,14 @@ import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.io.Serializable;
 
-//CLASS USER WITH PRIVATE VARIABLES
-class User implements Serializable{
-
-	private static final long serialVersionUID = 1L;
-	private String userName;
-	private String password;
-
-//CLASS CONSTRUCTOR
-	User(String nom,String pas){
-		this.userName = nom;
-		this.password = pas;
-	}   
-
-//PUBLIC ACCESSORS
-	public String getUserName()
-		{return userName;}
-	public String getPassword()
-		{return password;}
-	@Override
-	public String toString() {
-		return "Username:" + userName + "\nPassword: " + password;
-}
-}
-
-
-/*-------------------------------------------------------------------------*/
-
+import com.generation.jwd.p1.beans.UserBean;
 
 public class ReadAndWriteServlet {
 
 	public static void main(String[] args) {
 
-		User userBorja = new User("Borja", "123");
-		User UserMario = new User("Mario", "321");
+		UserBean userBorja = new UserBean("Borja", "Perez","borja@gmail.es");
+		UserBean UserMario = new UserBean("Mario", "Sanchez","mario@gmail.es");
 		
 		
 ////////////Write objects to file////////////
@@ -55,8 +29,8 @@ public class ReadAndWriteServlet {
 			writeObject.writeObject(userBorja);
 			writeObject.writeObject(UserMario);
 			
-//			System.out.println("< The object has been saved correctly >");
-//			System.out.println("");
+			System.out.println("< The object has been saved correctly >");
+			System.out.println("");
 
 			writeObject.close();
 			writeLocation.close();
@@ -65,13 +39,18 @@ public class ReadAndWriteServlet {
 			ObjectInputStream readObject = new ObjectInputStream(readLocation);
 
 ////////////Read objects////////////
-			User pr1 = (User) readObject.readObject();
-			User pr2 = (User) readObject.readObject();
+			UserBean pr1 = (UserBean) readObject.readObject();
+			UserBean pr2 = (UserBean) readObject.readObject();
 
-			System.out.println(pr1.toString());
-			System.out.println(pr2.toString());
-//			System.out.println("");	
-//			System.out.println("< The object has been readed correctly >");
+			System.out.println("Name 1: "+pr1.getName());
+			System.out.println("Surname 1: "+pr1.getSupername());
+			System.out.println("Mail 1: "+pr1.getEmail());
+			System.out.println("");
+			System.out.println("Name 1: "+pr2.getName());
+			System.out.println("Surname 1: "+pr2.getSupername());
+			System.out.println("Mail 1: "+pr2.getEmail());
+			System.out.println("");	
+			System.out.println("< The object has been readed correctly >");
 				
 
 			readObject.close();
