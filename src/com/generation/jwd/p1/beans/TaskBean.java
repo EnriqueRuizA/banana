@@ -16,6 +16,8 @@ public class TaskBean implements Serializable {
 	private String responsable;
 	private String priority;
 	private String urlFile;
+	private String status;
+	
 	
 	public TaskBean() {
 		
@@ -72,7 +74,7 @@ public class TaskBean implements Serializable {
 	public String getPriority() {
 		return priority;
 	}
-
+	
 	public void setPriority(String priority) {
 		this.priority = priority;
 	}
@@ -84,4 +86,12 @@ public class TaskBean implements Serializable {
 	public void setUrlFile(String urlFile) {
 		this.urlFile = urlFile;
 	}	
+	
+	public void setStatus(String status) {
+		this.status = status;
+	}
+	
+	public String getStatus() {
+		return status;
+	}
 }

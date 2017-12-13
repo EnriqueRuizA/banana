@@ -12,8 +12,8 @@
 		<header>
 			<div class="head"><img src="images/profile.png" width="55" height="55"><h3>Bienvenido/a (User)</h3>
             <a href="#">Editar perfil</a></div>
-            <div class="head"><h1>Banana GEST</h1><a href="home_usuario.html"><img src="images/bananas_medio.png"/></a></div>
-            <div class="head"><h4><a href="login.html">Logout</a></h4></div>
+            <div class="head"><h1>Banana GEST</h1><a href="homeuser.jsp"><img src="images/bananas_medio.png"/></a></div>
+            <div class="head"><h4><a href="login.jsp">Logout</a></h4></div>
 		</header>
 		<h2>Registro de nueva tarea</h2>
 		<hr>
@@ -26,7 +26,8 @@
 								Nombre de la tarea
 							</th>
 							<th class="contenttable">
-								<input style="background-color:#F5BFB2;" type="text" placeholder="Nombre de la tarea" name="name" autofocus/>
+								<input style="background-color:#F5BFB2;" type="text" placeholder="Nombre de la tarea"
+								name="name" value= <jsp:getProperty property="nameTask" name="TaskBean"/>autofocus/>
 							</th>
 						</tr>
 						<tr>
@@ -34,7 +35,8 @@
 								Descripción de la tarea
 							</th>
 							<th class="contenttable">
-								<textarea name="descripcion_tarea" rows="15" cols="60"></textarea>
+								<textarea name="descripcion_tarea" rows="15" cols="60" 
+								value= <jsp:getProperty property="description" name="TaskBean"/>></textarea>
 							</th>
 						</tr>
 						<tr>
@@ -42,7 +44,8 @@
 								Notas
 							</th>
 							<th class="contenttable">
-								<textarea name="notas_tarea" rows="15" cols="60"></textarea>
+								<textarea name="notas_tarea" rows="15" cols="60"
+								value= <jsp:getProperty property="notes" name="TaskBean"/>></textarea>
 							</th>
 						</tr>
 						<tr>
@@ -58,7 +61,10 @@
 								Fecha de inicio / Fecha de fin
 							</th>
 							<th class="contenttable">
-								<input id="dateform" type="date" name="date" /> hasta <input type="date" name="date" /> 
+								<input id="dateform" type="date" name="date" 
+								value= <jsp:getProperty property="dateStart" name="TaskBean"/>/> hasta 
+								<input type="date" name="date" 
+								value= <jsp:getProperty property="dateFinish" name="TaskBean"/>/> 
 							</th>
 						</tr>
 						<tr>
@@ -66,7 +72,8 @@
 								Responsable
 							</th>
 							<th class="contenttable">
-								<select  class="selectionbuton" name="responsable">
+								<select  class="selectionbuton" name="responsable" 
+								value= <jsp:getProperty property="responsable" name="TaskBean"/>>
 									<option>---Elige una opción---</option>
 									<option>Juan Maria</option>
 									<option>Jerges Gonzalez</option>
@@ -81,7 +88,8 @@
 								Prioridad de la tarea
 							</th>
 							<th class="contenttable">
-								<select class="selectionbuton" name="prioridad">
+								<select class="selectionbuton" name="prioridad"
+								value= <jsp:getProperty property="priority" name="TaskBean"/>>
 									<option>---Elige una opción---</option>
 									<option>Muy baja</option>
 									<option>Baja</option>
@@ -111,7 +119,7 @@
 								Estado
 							</th>
 							<th class="contenttable">
-								<select  class="selectionbuton" name="estado">
+								<select  class="selectionbuton" name="estado" value= <jsp:getProperty property="status" name="TaskBean"/>>
 									<option value="">---Elige una opción---</option>
 									<option value="1">Acabado</option>
 									<option value="2">Sin empezar</option>
