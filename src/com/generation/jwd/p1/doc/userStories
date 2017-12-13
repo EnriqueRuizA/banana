@@ -44,8 +44,8 @@ HISTORIAS DE USUARIO Y CRITERIOS DE ACEPTACION
 		
 5 - Como usuario quiero saber si estoy siempre logeado en BananaGest.
 
-	Dado un usuario identificado,
-	cuando el usuario se encuentra en "Home_Usuario" o "Crear Tarea",
-	entonces puede visualizar en el margen izquierdo que la sesión iniciada se corresponde a la suya.
+		Dado un usuario identificado,
+		cuando el usuario se encuentra en "Home_Usuario" o "Crear Tarea",
+		entonces puede visualizar en el margen izquierdo que la sesión iniciada se corresponde a la suya.
 
 
