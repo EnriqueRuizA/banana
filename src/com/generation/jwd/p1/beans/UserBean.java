@@ -2,14 +2,14 @@ package com.generation.jwd.p1.beans;
 
 public class UserBean {
 
-	String name;
-	String surname;
-	String department;
-	String email;
-	String role;
-	String imageUrl;
+	private String name;
+	private String surname;
+	private String department;
+	private String email;
+	private String role;
+	private String imageUrl;
 	
-	UserBean(String name, String surname, String department, String email, String role, String imageURL, String imageUrl){
+	public UserBean(String name, String surname, String department, String email, String role, String imageURL, String imageUrl){
 		this.name = name;
 		this.surname = surname;
 		this.department = department;
@@ -18,7 +18,7 @@ public class UserBean {
 		this.imageUrl = imageUrl;
 	};
 	
-	UserBean(){
+	public UserBean(){
 		
 	}	
 	

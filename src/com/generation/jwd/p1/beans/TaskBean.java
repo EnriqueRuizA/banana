@@ -2,16 +2,16 @@ package com.generation.jwd.p1.beans;
 
 public class TaskBean {
 	
-	String nameTask;
-	String description;
-	String dateStart;
-	String dateFinish;
-	String notes;
-	String responsable;
-	String priority;
-	String urlFile;
+	private String nameTask;
+	private String description;
+	private String dateStart;
+	private String dateFinish;
+	private String notes;
+	private String responsable;
+	private String priority;
+	private String urlFile;
 	
-	TaskBean(){
+	public TaskBean(){
 		
 	}
 	

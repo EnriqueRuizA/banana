@@ -2,15 +2,15 @@ package com.generation.jwd.p1.beans;
 
 public class LoginBean {
 
-	String user;
-	String password;
+	private String user;
+	private String password;
 	
-	LoginBean(String user, String password){
+	public LoginBean(String user, String password){
 		this.user = user;
 		this.password = password;
 	}
 	
-	LoginBean(){
+	public LoginBean(){
 		
 	}
 	
