@@ -20,10 +20,10 @@ public class LoginBean  implements Serializable {
 		
 	}
 	
-	public String getId() {
+	public String getUser() {
 		return user;
 	}
-	public void setId(String user) {
+	public void setUser(String user) {
 		this.user = user;
 	}
 	public String getPassword() {
@@ -33,11 +33,11 @@ public class LoginBean  implements Serializable {
 		this.password = password;
 	}
 	
-	public boolean validatorpass() {
+	public boolean validatorPass() {
 		return this.password.equals("admin");
 	}
 	
-	public boolean validatoradmin() {
+	public boolean validatorAdmin() {
 		return this.user.equals("admin");
 	}
 }

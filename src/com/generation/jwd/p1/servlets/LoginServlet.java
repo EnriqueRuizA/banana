@@ -9,12 +9,14 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import com.generation.jwd.p1.beans.LoginBean;
+import com.generation.jwd.p1.beans.UserBean;
 
 //Holas
 /**
  * Servlet implementation class LoginServlet
  */
 @WebServlet("/login")
+
 public class LoginServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
@@ -34,16 +36,28 @@ public class LoginServlet extends HttpServlet {
 
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		LoginBean loginBean = new LoginBean();
-		loginBean.setId(request.getParameter("user"));
-		loginBean.setPassword(request.getParameter("password"));
+//		try {
+//		}
 		
-		request.setAttribute("loginBean", loginBean);
+		LoginBean loginBean = new LoginBean();
+		loginBean.setUser(request.getParameter("user"));
+		loginBean.setPassword(request.getParameter("password"));
+//		UserBean user1 = new UserBean ();
+//		user1.
+
+		
+		
+//		request.setAttribute("loginBean", loginBean);
 		
 		HttpSession session = request.getSession();
+
+		if(loginBean.validatorAdmin() == true) {
+			session.setAttribute("comprobar", "Datos correctos");
+		}else {
+			session.setAttribute("comprobar", "Datos incorrectos");
+		}
 		
-		if()
-		doGet(request, response);
+		request.getRequestDispatcher("login.jsp").forward(request, response);
 	}
 
 }
