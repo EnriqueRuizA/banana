@@ -18,9 +18,18 @@ public class TaskBean implements Serializable {
 	private String urlFile;
 	private String status;
 	
+	public TaskBean() {};
 	
-	public TaskBean() {
-		
+	public TaskBean(String nameTask, String description, String dateStart, String dateFinish, String notes, String responsable, String priority, String urlFile, String status) {
+		this.nameTask = nameTask;
+		this.description = description;
+		this.dateStart = dateStart;
+		this.dateFinish = dateFinish;
+		this.notes = notes;
+		this.responsable = responsable;
+		this.priority = priority;
+		this.urlFile = urlFile;
+		this.status = status;
 	}
 	
 	public String getNameTask() {

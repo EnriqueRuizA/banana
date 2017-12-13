@@ -8,9 +8,8 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
-import java.io.Serializable;
-
 import com.generation.jwd.p1.beans.UserBean;
+import com.generation.jwd.p1.beans.TaskBean;
 
 public class ReadAndWriteServlet {
 
@@ -18,6 +17,9 @@ public class ReadAndWriteServlet {
 
 		UserBean userBorja = new UserBean("Borja", "Perez","borja@gmail.es");
 		UserBean UserMario = new UserBean("Mario", "Sanchez","mario@gmail.es");
+		
+		TaskBean taskBorja = new TaskBean("default", "default", "default", "default", "default", "default", "default", "default", "default");
+		TaskBean taskMario = new TaskBean("default", "default", "default", "default", "default", "default", "default", "default", "default");
 		
 		
 ////////////Write objects to file////////////
