@@ -1,3 +1,4 @@
+
 package com.generation.jwd.p1.beans;
 
 import java.io.Serializable;
@@ -11,14 +12,19 @@ public class LoginBean  implements Serializable {
 	private String user;
 	private String password;
 	
-	public LoginBean(String user, String password){
-		this.user = user;
-		this.password = password;
-	}
-	
-	public LoginBean(){
+	public LoginBean() {
 		
 	}
+	
+	UserBean user1 = new UserBean(
+			"user1",
+			"123"
+			);
+	
+	UserBean user2 = new UserBean(
+			"user2",
+			"321"
+			);
 	
 	public String getUser() {
 		return user;
@@ -33,11 +39,8 @@ public class LoginBean  implements Serializable {
 		this.password = password;
 	}
 	
-	public boolean validatorPass() {
-		return this.password.equals("admin");
+	public boolean validator() {
+		return this.password.equals(user1.getPassword());
 	}
 	
-	public boolean validatorAdmin() {
-		return this.user.equals("admin");
-	}
 }

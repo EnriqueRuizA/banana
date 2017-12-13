@@ -21,7 +21,7 @@
 			<div class="row">
 				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 					<img id= "bananas" src="images/bananas_grande.png"/>
-					<form action="login" method="get" id="formulario">
+					<form action="login" method="post" id="formulario">
 						<p id="error"></p>
 						<div class="intro_user">
 							<img class="alinear" src="images/user.png"/>
