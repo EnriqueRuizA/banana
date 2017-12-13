@@ -1,7 +1,13 @@
 package com.generation.jwd.p1.beans;
 
-public class TaskBean {
+import java.io.Serializable;
+
+public class TaskBean implements Serializable {
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private String nameTask;
 	private String description;
 	private String dateStart;
@@ -11,7 +17,7 @@ public class TaskBean {
 	private String priority;
 	private String urlFile;
 	
-	public TaskBean(){
+	public TaskBean() {
 		
 	}
 	
