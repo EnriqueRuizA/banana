@@ -4,8 +4,8 @@ public class TaskBean {
 	
 	String nameTask;
 	String description;
-	String fechaInicio;
-	String fechaFin;
+	String dateStart;
+	String dateFinish;
 	String notes;
 	String responsable;
 	String priority;
@@ -31,20 +31,20 @@ public class TaskBean {
 		this.description = description;
 	}
 
-	public String getFechaInicio() {
-		return fechaInicio;
+	public String getdateStart() {
+		return dateStart;
 	}
 
-	public void setFechaInicio(String fechaInicio) {
-		this.fechaInicio = fechaInicio;
+	public void setFechaInicio(String dateStart) {
+		this.dateStart = dateStart;
 	}
 
-	public String getFechaFin() {
-		return fechaFin;
+	public String getdateFinish() {
+		return dateFinish;
 	}
 
-	public void setFechaFin(String fechaFin) {
-		this.fechaFin = fechaFin;
+	public void setdateFinish(String dateFinish) {
+		this.dateFinish = dateFinish;
 	}
 
 	public String getNotes() {
