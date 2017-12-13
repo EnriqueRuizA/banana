@@ -35,19 +35,10 @@ public class LoginServlet extends HttpServlet {
 	}
 
 
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-//		try {
-//		}
-		
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {	
 		LoginBean loginBean = new LoginBean();
 		loginBean.setUser(request.getParameter("user"));
 		loginBean.setPassword(request.getParameter("password"));
-//		UserBean user1 = new UserBean ();
-//		user1.
-
-		
-		
-//		request.setAttribute("loginBean", loginBean);
 		
 		HttpSession session = request.getSession();
 
