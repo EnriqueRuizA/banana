@@ -27,7 +27,7 @@
 							</th>
 							<th class="contenttable">
 								<input style="background-color:#F5BFB2;" type="text" placeholder="Nombre de la tarea"
-								name="name" value= <jsp:getProperty property="nameTask" name="TaskBean"/>autofocus/>
+								name="name" autofocus/>
 							</th>
 						</tr>
 						<tr>
@@ -35,8 +35,7 @@
 								Descripción de la tarea
 							</th>
 							<th class="contenttable">
-								<textarea name="descripcion_tarea" rows="15" cols="60" 
-								value= <jsp:getProperty property="description" name="TaskBean"/>></textarea>
+								<textarea name="descripcion_tarea" rows="15" cols="60"></textarea>
 							</th>
 						</tr>
 						<tr>
@@ -45,7 +44,7 @@
 							</th>
 							<th class="contenttable">
 								<textarea name="notas_tarea" rows="15" cols="60"
-								value= <jsp:getProperty property="notes" name="TaskBean"/>></textarea>
+								 ></textarea>
 							</th>
 						</tr>
 						<tr>
@@ -62,9 +61,9 @@
 							</th>
 							<th class="contenttable">
 								<input id="dateform" type="date" name="date" 
-								value= <jsp:getProperty property="dateStart" name="TaskBean"/>/> hasta 
+								/> hasta 
 								<input type="date" name="date" 
-								value= <jsp:getProperty property="dateFinish" name="TaskBean"/>/> 
+								/> 
 							</th>
 						</tr>
 						<tr>
@@ -72,8 +71,7 @@
 								Responsable
 							</th>
 							<th class="contenttable">
-								<select  class="selectionbuton" name="responsable" 
-								value= <jsp:getProperty property="responsable" name="TaskBean"/>>
+								<select  class="selectionbuton" name="responsable">
 									<option>---Elige una opción---</option>
 									<option>Juan Maria</option>
 									<option>Jerges Gonzalez</option>
@@ -89,7 +87,7 @@
 							</th>
 							<th class="contenttable">
 								<select class="selectionbuton" name="prioridad"
-								value= <jsp:getProperty property="priority" name="TaskBean"/>>
+								>
 									<option>---Elige una opción---</option>
 									<option>Muy baja</option>
 									<option>Baja</option>
@@ -119,7 +117,7 @@
 								Estado
 							</th>
 							<th class="contenttable">
-								<select  class="selectionbuton" name="estado" value= <jsp:getProperty property="status" name="TaskBean"/>>
+								<select  class="selectionbuton" name="estado">
 									<option value="">---Elige una opción---</option>
 									<option value="1">Acabado</option>
 									<option value="2">Sin empezar</option>
