@@ -77,7 +77,9 @@
 		</main>
 		<br/>
 		<footer>
-			<span>Banana GEST - Todos los derechos reservados</span>
+			<div class="row">
+				<span class="col-xs-12 col-sm-12 col-md-12 col-lg-12">Banana GEST - Todos los derechos reservados</span>
+			</div>
 		</footer>
 	</body>
 </html>

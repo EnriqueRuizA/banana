@@ -35,7 +35,7 @@ public class TaskBean {
 		return dateStart;
 	}
 
-	public void setFechaInicio(String dateStart) {
+	public void setdateStart(String dateStart) {
 		this.dateStart = dateStart;
 	}
 
