@@ -9,7 +9,7 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 		<link rel="stylesheet" type="text/css" href="login.css">
 	</head>
-	<body>
+	<body method="get" action="/homeusuario">
 		<header class="container-fluid">			
 			<div class="row">
 				<div class="register col-xs-4 col-sm-4 col-md-4 col-lg-4"><span><img src="images/bananas.png"> Welcome to BananaGEST!</span></div>

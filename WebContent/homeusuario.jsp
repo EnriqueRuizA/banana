@@ -7,7 +7,7 @@
 		<title>Document</title>
 		<link rel="stylesheet" type="text/css" href="homeusuario.css">
 	</head>
-	<body>
+	<body method="get" action= "/homeusuario">
 		<header>
 			<div class="head"><img src="images/profile.png" width="55" height="55"><h3>Bienvenido/a (User)</h3>
             <a href="#">Editar perfil</a></div>
