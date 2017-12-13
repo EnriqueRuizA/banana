@@ -51,12 +51,12 @@ public class ReadAndWriteServlet {
 			TaskBean tsk2 = (TaskBean) readObject.readObject();
 
 			System.out.println("Name 1:    "+usr1.getName());
-			System.out.println("Surname 1: "+usr1.getSupername());
+			System.out.println("Surname 1: "+usr1.getSurname());
 			System.out.println("Mail 1:    "+usr1.getEmail());
 			System.out.println("Task 1:    "+tsk1.getNameTask());
 			System.out.println("");
 			System.out.println("Name 2:    "+usr2.getName());
-			System.out.println("Surname 2: "+usr2.getSupername());
+			System.out.println("Surname 2: "+usr2.getSurname());
 			System.out.println("Mail 2:    "+usr2.getEmail());
 			System.out.println("Task 2:    "+tsk2.getNameTask());
 			System.out.println("");	
