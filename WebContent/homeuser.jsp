@@ -17,7 +17,7 @@
 		<main>
 			<section class="botones">
 				<p>
-					<a href="crearproyecto.html">
+					<a href="">
 						<input type="submit" name="boton" value="Crear proyecto" style="width:60%">
 					</a>
 					<a href="#">
@@ -25,10 +25,10 @@
 					</a>
 				</p>
 				<p>
-					<a href="creartarea.html">
+					<a href="createtask.jsp">
 						<input type="submit" name="boton" value="Crear tarea" style="width:60%">
 					</a>
-					<a href="creartarea.html">
+					<a href="createtask.jsp">
 						<img src="images/add.png" style="width:3%"/>
 					</a>
 				</p>	
