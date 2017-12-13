@@ -29,7 +29,7 @@
 						</div>
 						<div class="intro_user">
 							<img class="alinear" src="images/lock.png"/>
-							<input type="password" name="password" placeholder="Password" maxlength="12" minlength="6" required="true"/>
+							<input type="password" name="password" placeholder="Password" maxlength="12" minlength="4" required="true"/>
 						</div>
 						<div class="intro_user">
 						<a class="password" href="#">He olvidado mi contraseña</a>

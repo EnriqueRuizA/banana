@@ -18,13 +18,15 @@ public class LoginBean  implements Serializable {
 	
 	UserBean user1 = new UserBean(
 			"user1",
-			"123"
+			"12345"
 			);
 	
 	UserBean user2 = new UserBean(
 			"user2",
-			"321"
+			"32155"
 			);
+	
+	UserBean[] users = {user1, user2};
 	
 	public String getUser() {
 		return user;
