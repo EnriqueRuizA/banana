@@ -9,7 +9,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.generation.jwd.p1.beans.LoginBean;
 
-//Hola
+//Holas
 /**
  * Servlet implementation class LoginServlet
  */
