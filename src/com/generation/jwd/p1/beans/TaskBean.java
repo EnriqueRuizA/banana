@@ -106,4 +106,7 @@ public class TaskBean implements Serializable {
 	public String getStatus() {
 		return status;
 	}
+	public boolean validate () {
+		return this.nameTask.equals("hola");
+	}
 }

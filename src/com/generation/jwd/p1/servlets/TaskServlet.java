@@ -33,23 +33,25 @@ public class TaskServlet extends HttpServlet {
 	
 	}
 	
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		TaskBean task = new TaskBean();
-		task.setNameTask(request.getParameter("nameTask"));
-		task.setDescription(request.getParameter("description"));
-		task.setdateStart(request.getParameter("dateStart"));
-		task.setdateFinish(request.getParameter("dateFinish"));
-		task.setNotes(request.getParameter("notes"));
-		task.setResponsable(request.getParameter("responsable"));
-		task.setPriority(request.getParameter("priority"));
-		task.setUrlFile(request.getParameter("urlFile"));
-		
-		HttpSession session_name= (HttpSession)request.getSession();
-		
-		session_name.setAttribute("saveTask",task);
-		request.getRequestDispatcher("homeuser.jsp")
-		.forward(request, response);
-	}
-
-
+	 protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		 TaskBean task = new TaskBean();
+	     task.setNameTask(request.getParameter("nameTask"));
+	     task.setDescription(request.getParameter("description"));
+	     task.setdateStart(request.getParameter("dateStart"));
+	     task.setdateFinish(request.getParameter("dateFinish"));
+	     task.setNotes(request.getParameter("notes"));
+	     task.setResponsable(request.getParameter("responsable"));
+	     task.setPriority(request.getParameter("priority"));
+	     task.setUrlFile(request.getParameter("urlFile"));
+	        
+	     HttpSession session_name= (HttpSession)request.getSession();
+	        
+	     if(task.validate() == true) {
+	    	 session_name.setAttribute("saveTask", "A new task has been created");
+	         request.getRequestDispatcher("homeuser.jsp").forward(request, response);
+	     } else {
+	    	 session_name.setAttribute("saveTask", "error: a new task has not created");
+	         request.getRequestDispatcher("createtask.jsp").forward(request, response);
+	     }
+	 }
 }
