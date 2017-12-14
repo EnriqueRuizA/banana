@@ -48,6 +48,7 @@ public class TaskServlet extends HttpServlet {
 	        
 	     if(task.validate() == true) {
 	    	 session_name.setAttribute("saveTask", "A new task has been created");
+	    	 session_name.setAttribute("task", task.getNameTask());
 	         request.getRequestDispatcher("homeuser.jsp").forward(request, response);
 	     } else {
 	    	 session_name.setAttribute("saveTask", "error: a new task has not created");

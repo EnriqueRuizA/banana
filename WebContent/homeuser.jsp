@@ -70,7 +70,9 @@
 								<td>
 									<a href="#">Tarea 5</a>
 								</td>
-							</tr>
+								<td>
+									<a href="#">${task}</a>
+								</td>
 						</table>
 					</p>
 				</nav>	
