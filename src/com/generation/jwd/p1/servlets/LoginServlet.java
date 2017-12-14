@@ -34,10 +34,6 @@ public class LoginServlet extends HttpServlet {
 		loginBean.setUser(request.getParameter("user"));
 		loginBean.setPassword(request.getParameter("password"));
 //		UserBean user1 = new UserBean ();
-
-
-		
-		
 //		request.setAttribute("loginBean", loginBean);
 		
 		HttpSession session = request.getSession();
@@ -47,7 +43,6 @@ public class LoginServlet extends HttpServlet {
 		}else {
 			session.setAttribute("comprobar", "Datos incorrectos");
 		}
-		
 		request.getRequestDispatcher("login.jsp").forward(request, response);
 	}
 

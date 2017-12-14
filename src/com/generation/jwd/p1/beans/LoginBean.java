@@ -12,22 +12,21 @@ public class LoginBean  implements Serializable {
 	private String user;
 	private String password;
 	
-	public LoginBean() {
-		
+	public LoginBean() {	
 	}
 	
-	UserBean user1 = new UserBean(
-			"user1",
-			"12345"
-			);
-	
-	UserBean user2 = new UserBean(
-			"user2",
-			"32155"
-			);
-	
-	UserBean[] users = {user1, user2};
-	
+//	UserBean user1 = new UserBean(
+//			"user1",
+//			"12345"
+//			);
+//	
+//	UserBean user2 = new UserBean(
+//			"user2",
+//			"32155"
+//			);
+//	
+//	UserBean[] users = {user1, user2};
+//	
 	public String getUser() {
 		return user;
 	}
@@ -42,7 +41,6 @@ public class LoginBean  implements Serializable {
 	}
 	
 	public boolean validator() {
-		return this.password.equals(user1.getPassword());
-	}
-	
+		return this.password.equals("admin") && this.user.equals("admin");
+	}	
 }
