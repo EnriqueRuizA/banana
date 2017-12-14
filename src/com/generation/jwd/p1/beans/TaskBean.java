@@ -20,7 +20,10 @@ public class TaskBean implements Serializable {
 	
 	public TaskBean() {};
 	
-	public TaskBean(String nameTask, String description, String dateStart, String dateFinish, String notes, String responsable, String priority, String urlFile, String status) {
+	public TaskBean(String nameTask, String description, String dateStart, 
+					String dateFinish, String notes, String responsable, 
+					String priority, String urlFile, String status) {
+		
 		this.nameTask = nameTask;
 		this.description = description;
 		this.dateStart = dateStart;
